@@ -6,7 +6,7 @@ interface Params {
   }
 }
 
-export default async function UserPage ({ params: { userId } }: Params) {
+export default async function UserPage({ params: { userId } }: Params) {
   const user = await getUserById(userId)
 
   return (
